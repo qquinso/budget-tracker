@@ -77,7 +77,7 @@ connectButton.addEventListener(
         if (!url) {
 
             alert(
-                "Please enter your Apps Script URL."
+                "please enter your apps script url"
             );
 
             return;
