@@ -35,7 +35,7 @@ function updateDate() {
                 month: "long",
                 day: "numeric"
             }
-        );
+        ).toLowerCase();
 
 }
 
