@@ -103,6 +103,27 @@ select {
 
 }
 
+.amount-input {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    padding-left: 14px;
+}
+
+.amount-input span {
+    font-size: 16px;
+    color: #777;
+}
+
+.amount-input input {
+    margin-top: 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
 
 button {
 
