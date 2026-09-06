@@ -183,7 +183,7 @@ addButton.addEventListener(
         // LOADING
 
         addButton.textContent =
-            "Adding...";
+            "adding...";
 
         addButton.disabled =
             true;
