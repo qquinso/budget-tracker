@@ -156,7 +156,7 @@ addButton.addEventListener(
         ) {
 
             message.textContent =
-                "Please complete all fields.";
+                "please complete all fields";
 
             return;
 
