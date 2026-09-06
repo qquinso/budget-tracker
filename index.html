@@ -24,7 +24,7 @@
 
         <header>
 
-            <h1>Budget</h1>
+            <h1>your gastos tracker</h1>
 
             <p id="date"></p>
 
@@ -38,10 +38,10 @@
             class="card hidden"
         >
 
-            <h2>Connect your sheet</h2>
+            <h2>connect your sheet!</h2>
 
             <p>
-                Paste your Google Apps Script URL.
+                paste your gsheet's Apps Script URL (ask wax how to connect)
             </p>
 
             <input
@@ -52,7 +52,7 @@
 
             <button id="connectButton">
 
-                Connect
+                connect
 
             </button>
 
@@ -66,30 +66,17 @@
             class="card hidden"
         >
 
-            <h2>Add Transaction</h2>
+            <h2>add transaction</h2>
 
 
             <label>
 
-                Description
-
-                <input
-                    type="text"
-                    id="description"
-                    placeholder="What was it?"
-                >
-
-            </label>
-
-
-            <label>
-
-                Amount
+                amount
 
                 <input
                     type="number"
                     id="amount"
-                    placeholder="0.00"
+                    placeholder="₱0.00"
                     min="0"
                     step="0.01"
                 >
@@ -99,40 +86,73 @@
 
             <label>
 
-                Category
+                description
+
+                <input
+                    type="text"
+                    id="description"
+                    placeholder=""
+                >
+
+            </label>
+
+
+            <label>
+
+                category
 
                 <select id="category">
 
                     <option value="">
-                        Select category
-                    </option>
-
-                    <option value="Food">
-                        Food
+                        
                     </option>
 
                     <option value="Transportation">
-                        Transportation
+                        transportation
+                    </option>
+
+                    <option value="Food">
+                        food
+                    </option>
+
+                    <option value="Dorm / Housing">
+                        dorm/housing
                     </option>
 
                     <option value="School">
-                        School
+                        school
                     </option>
 
-                    <option value="Shopping">
-                        Shopping
+                    <option value="Load / Internet">
+                        load/internet
                     </option>
 
-                    <option value="Entertainment">
-                        Entertainment
+                    <option value="Personal Care">
+                        personal care
                     </option>
 
-                    <option value="Bills">
-                        Bills
+                    <option value="Health">
+                        health
                     </option>
 
-                    <option value="Other">
-                        Other
+                    <option value="Clothing">
+                        clothing
+                    </option>
+
+                    <option value="Leisure">
+                        leisure
+                    </option>
+
+                    <option value="Gifts / Miscellaneous">
+                        gifts/misc
+                    </option>
+
+                    <option value="Savings">
+                        savings
+                    </option>
+
+                    <option value="Money In / Allowance">
+                        money in/allowance
                     </option>
 
                 </select>
@@ -142,32 +162,32 @@
 
             <label>
 
-                Mode of Payment
+                mode of payment
 
                 <select id="payment">
 
                     <option value="">
-                        Select payment
+                        
                     </option>
 
                     <option value="Cash">
-                        Cash
-                    </option>
-
-                    <option value="Landbank">
-                        Landbank
+                        cash
                     </option>
 
                     <option value="GCash">
-                        GCash
-                    </option>
-
-                    <option value="Maya">
-                        Maya
+                        gcash
                     </option>
 
                     <option value="Beep Card">
-                        Beep Card
+                        beep card
+                    </option>
+                    
+                    <option value="Landbank">
+                        landbank
+                    </option>
+
+                    <option value="Maya">
+                        maya
                     </option>
 
                 </select>
@@ -177,16 +197,16 @@
 
             <label>
 
-                Transaction
+                transaction
 
                 <select id="type">
 
                     <option value="Cash Out">
-                        Cash Out
+                        cash out
                     </option>
 
                     <option value="Cash In">
-                        Cash In
+                        cash in
                     </option>
 
                 </select>
@@ -196,7 +216,7 @@
 
             <button id="addButton">
 
-                Add Transaction
+                add transaction
 
             </button>
 
@@ -217,7 +237,7 @@
             class="settings"
         >
 
-            Settings
+            reset gsheet link?
 
         </button>
 
