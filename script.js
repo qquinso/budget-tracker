@@ -216,7 +216,11 @@ addButton.addEventListener(
             // SUCCESS
 
             message.textContent =
-                "✓ Transaction added";
+                "✓ transaction added";
+
+            setTimeout(() => {
+                message.textContent = "";
+            }, 2000);
 
 
             // RESET FORM
@@ -253,13 +257,13 @@ addButton.addEventListener(
 
 
             message.textContent =
-                "Something went wrong.";
+                "uh oh, something went wrong";
 
         }
 
 
         addButton.textContent =
-            "Add Transaction";
+            "add transaction";
 
 
         addButton.disabled =
@@ -279,7 +283,7 @@ settingsButton.addEventListener(
 
         const confirmReset =
             confirm(
-                "Change your Google Sheet connection?"
+                "sure? this will reset your gsheet connection"
             );
 
 
